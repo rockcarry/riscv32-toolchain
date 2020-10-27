@@ -1,0 +1,7 @@
+/* Generated automatically. */
+static const char configuration_arguments[] = "/home/chenk/crosstool-ng-build/.build/riscv32-picolibc-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=riscv32-picolibc-elf --prefix=/home/chenk/x-tools/riscv32-picolibc-elf --exec_prefix=/home/chenk/x-tools/riscv32-picolibc-elf --with-local-prefix=/home/chenk/x-tools/riscv32-picolibc-elf/riscv32-picolibc-elf --with-headers=/home/chenk/x-tools/riscv32-picolibc-elf/riscv32-picolibc-elf/include --with-newlib --enable-threads=no --disable-shared --with-arch=rv32imac_zicsr_zifencei --with-abi=ilp32 --with-pkgversion='crosstool-NG 1.26.0' --enable-__cxa_atexit --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-default-libc=picolibc --enable-stdio=pure --with-gmp=/home/chenk/crosstool-ng-build/.build/riscv32-picolibc-elf/buildtools --with-mpfr=/home/chenk/crosstool-ng-build/.build/riscv32-picolibc-elf/buildtools --with-mpc=/home/chenk/crosstool-ng-build/.build/riscv32-picolibc-elf/buildtools --with-isl=/home/chenk/crosstool-ng-build/.build/riscv32-picolibc-elf/buildtools --enable-lto --enable-target-optspace --disable-nls --enable-tls --disable-multilib --enable-languages=c";
+static const char thread_model[] = "single";
+
+static const struct {
+  const char *name, *value;
+} configure_default_options[] = { { "abi", "ilp32" }, { "arch", "rv32imac_zicsr_zifencei" }, { "isa_spec", "20191213" } };
