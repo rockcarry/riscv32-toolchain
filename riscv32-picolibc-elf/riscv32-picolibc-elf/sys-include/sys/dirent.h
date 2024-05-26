@@ -32,10 +32,38 @@ SUCH DAMAGE.
    not support <dirent.h>, we will get this file which uses #error to force
    an error.  */
 
+#include <sys/types.h>
+#include <sys/syslimits.h>
+
 #ifdef __cplusplus
 extern "C" {
 #endif
-#error "<dirent.h> not supported"
+
+enum {
+    DT_UNKNOWN = 0,
+    DT_FIFO    = 1,
+    DT_CHR     = 2,
+    DT_DIR     = 4,
+    DT_BLK     = 6,
+    DT_REG     = 8,
+    DT_LNK     = 10,
+    DT_SOCK    = 12,
+    DT_WHT     = 14,
+};
+
+typedef void *DIR;
+
+struct dirent {
+    long  d_ino;
+    off_t d_off;
+    unsigned short d_reclen;
+    unsigned char  d_type;
+    char d_name[NAME_MAX + 1];
+    uint16_t d_fdate;
+    uint16_t d_ftime;
+    uint64_t d_fsize;
+};
+
 #ifdef __cplusplus
 }
 #endif
